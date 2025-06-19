@@ -3,7 +3,6 @@
 <head>
     <title>Send to iPod</title>
     <style>
-        /* Your excellent CSS from above */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { width: 320px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; overflow: hidden; }
         .container { padding: 24px 20px; position: relative; }
@@ -24,7 +23,7 @@
         .btn:active { transform: translateY(0); transition: transform 0.1s; }
         .btn-icon { font-size: 16px; }
         #status { min-height: 20px; padding: 12px; border-radius: 8px; font-size: 13px; font-weight: 500; text-align: center; transition: all 0.3s ease; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .status-hidden { opacity: 0; transform: translateY(10px); pointer-events: none; }
+        .status-hidden { opacity: 0; transform: translateY(10px); }
         .status-success { background: rgba(46, 213, 115, 0.2); color: #ffffff; opacity: 1; transform: translateY(0); }
         .status-error { background: rgba(255, 107, 107, 0.2); color: #ffffff; opacity: 1; transform: translateY(0); }
         .status-loading { background: rgba(255, 255, 255, 0.1); color: #ffffff; opacity: 1; transform: translateY(0); }
@@ -39,7 +38,7 @@
     <div class="background-pattern"></div>
     <div class="container">
         <div class="header">
-            <div class="logo">🚀</div>
+            <div class="logo">🎵</div>
             <h1>Send to iPod</h1>
             <div class="subtitle">Convert YouTube videos</div>
         </div>
@@ -62,7 +61,6 @@
         <div id="status" class="status-hidden"></div>
     </div>
 
-    <!-- The only change is here: we link to the external JS file -->
     <script src="popup.js" defer></script>
 </body>
 </html>
