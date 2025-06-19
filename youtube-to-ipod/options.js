@@ -28,5 +28,12 @@ function restore_options() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', restore_options);
-document.getElementById('save').addEventListener('click', save_options);
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', restore_options);
+  const saveBtn = document.getElementById('save');
+  if (saveBtn) saveBtn.addEventListener('click', save_options);
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = { save_options, restore_options };
+}

@@ -1,0 +1,20 @@
+{
+  "name": "yt2ipod",
+  "version": "1.0.0",
+  "description": "**YT2IPOD** is a simple Chrome extension that sends the currently open YouTube video to a self-hosted API so you can convert it for offline listening on your iPod. Think of it as a quick bridge between YouTube and your iPod dock.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "jest-environment-jsdom": "^30.0.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
