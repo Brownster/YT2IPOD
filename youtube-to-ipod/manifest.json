@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube to iPod Sync",
+  "version": "1.0",
+  "description": "Sends the current YouTube video URL to a local server for syncing to an iPod.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
